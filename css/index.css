@@ -7,6 +7,11 @@
   font-family: Orbitron;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;
@@ -54,7 +59,8 @@ nav {
 
 @media (max-width: 945px) {
   .nav {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .nav-btn__link {
     padding: 8px 15px;
@@ -66,12 +72,18 @@ nav {
 
 @media (max-width: 505px) {
   .nav-menu {
-    flex-direction: column;
-  }
-  .nav-menu,
-  .nav-btn {
+    flex-wrap: wrap;
+    justify-content: center;
     display: none;
+    gap: 0px;
   }
+  .nav-brand {
+    width: 100%;
+  }
+  /* .nav-menu {
+    flex-direction: column; 
+    display: none;
+    } */
   .nav-btn {
     flex-direction: column;
   }
@@ -84,13 +96,24 @@ nav {
 }
 
 @media (max-width: 1340px) {
+  .personaj {
+    width: 100%;
+  }
   .unleash {
     flex-direction: column;
     gap: 50px;
   }
-}
+  .linetop {
+    display: none;
+  }
+  .nav-menu {
+    gap: 10px;
+  }
 
-@media (max-width: 1340px) {
+  .active {
+    display: flex;
+  }
+
   .sponsor-wrapper {
     flex-wrap: wrap;
   }
@@ -102,9 +125,21 @@ nav {
   }
 }
 
+@media (max-width:1230px) {
+  .era-div{
+    flex-direction: column;
+  }
+  .frame{
+    width: 100%;
+  }
+}
+
 @media (max-width: 1325px) {
   .shop_wrapper {
     flex-direction: column;
+  }
+  .shopcard{
+    margin-top: 20px;
   }
 }
 
@@ -280,9 +315,9 @@ span img {
   max-width: 434px;
 }
 
-.personaj {
+/* .personaj {
   width: 100%;
-}
+} */
 
 .span {
   position: relative;
@@ -337,7 +372,7 @@ span img {
 .shopcard {
   padding: 35px 38px;
   gap: 17px;
-  width: 642px;
+  max-width: 642px;
   height: 212px;
   border-radius: 20px;
   background: #485152;
@@ -355,7 +390,7 @@ span img {
 .shopcardd {
   margin-top: 19px;
   padding: 35px 38px;
-  width: 642px;
+  max-width: 642px;
   height: 212px;
   border-radius: 20px;
   background: #485152;
@@ -393,6 +428,7 @@ span img {
 
 #era {
   background: rgba(0, 0, 0, 0.88);
+  padding: 86px 0;
 }
 
 .era-div {
@@ -402,6 +438,7 @@ span img {
 }
 
 .era_title {
+  margin-top: 12px;
   max-width: 684px;
   font-family: Orbitron;
   font-weight: 400;
@@ -413,6 +450,7 @@ span img {
 }
 
 .era_text {
+  margin-top: 36px;
   max-width: 721px;
   font-family: Orbitron;
   font-weight: 400;
@@ -423,8 +461,24 @@ span img {
 }
 
 .era-btn {
+  margin-top: 54px;
   width: 203px;
   height: 70px;
   background: rgba(87, 184, 255, 1);
   border: none;
+}
+
+@media (max-width:501px) {
+  .shopcard{
+    padding: 17px 17px;
+  }
+  .shopcardd{
+    padding: 17px 17px;
+  }
+}
+
+@media (max-width:455px) {
+  .shopcard_text{
+    margin: 0px;
+  }
 }
