@@ -23,11 +23,13 @@
     />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="container">
         <nav class="nav">
           <div class="nav-brand">
-            <img src="./images/logo.svg" alt="" />
+            <a href="#home">
+              <img src="./images/logo.svg" alt="" />
+            </a>
             <i id="hamburger" class="fa-solid fa-bars"></i>
           </div>
           <ul class="nav-menu">
@@ -44,18 +46,18 @@
             </li>
 
             <li>
-              <a href="#" class="nav-menu__link">Shop</a>
+              <a href="#options" class="nav-menu__link">Shop</a>
             </li>
 
             <li>
-              <a href="#" class="nav-menu__link">Pages</a>
+              <a href="#news" class="nav-menu__link">Pages</a>
             </li>
           </ul>
           <div class="nav-btn">
             <div class="nav-btn__img">
               <img src="./images/moon.svg" alt="" />
             </div>
-            <a href="#" class="nav-btn__link">Contact Us</a>
+            <a href="#footer" class="nav-btn__link">Contact Us</a>
           </div>
         </nav>
       </div>
@@ -89,7 +91,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <section id="sponsor">
       <div class="container">
         <h2 class="sponsor_title">
@@ -111,7 +113,7 @@
           <img src="./images/IMAGE (11).png" alt="" />
         </div>
       </div>
-    </section> 
+    </section>
     <section id="shop">
       <div class="container">
         <div class="future">
@@ -202,7 +204,86 @@
           <img class="frame" src="./images/Frame.png" alt="" />
         </div>
       </div>
-    </section> 
+    </section>
+    <section id="options"></section>
+    <section id="news">
+      <div class="container">
+        <div class="futures">
+          <img src="./images/fair.svg" alt="" />
+          <h2 class="future_title">FUTURE OF eSPORTS</h2>
+        </div>
+        <div class="news_titles">
+          <h2 class="news_title">
+            Latest News &
+            <br />
+            Articles
+          </h2>
+          <button class="new_btn">Read More</button>
+        </div>
+        <div class="news_wrapper">
+          <div class="colt">
+            <img src="./images/big.svg" alt="" class="colt_img" />
+            <p class="colt_date">April 2, 2021</p>
+            <h2 class="colt_title">
+              Esports Group teams up with the Indianapolis Colts
+            </h2>
+          </div>
+          <div class="new_cards">
+            <div class="new_card">
+              <img src="./images/small1.svg" alt="" class="new_card_img" />
+              <p class="new_card_date">April 2, 2021</p>
+              <h2 class="new_card_title">
+                NAVI reveals s1mple fifth anniversary
+              </h2>
+            </div>
+
+            <div class="new_card">
+              <img src="./images/small2.svg" alt="" class="new_card_img" />
+              <p class="new_card_date">April 2, 2021</p>
+              <h2 class="new_card_title">A1esports Shares new picture</h2>
+            </div>
+
+            <div class="new_card">
+              <img src="./images/small3.svg" alt="" class="new_card_img" />
+              <p class="new_card_date">April 2, 2021</p>
+              <h2 class="new_card_title">T1 unveil partnership with Razer</h2>
+            </div>
+
+            <div class="new_card">
+              <img src="./images/small4.svg" alt="" class="new_card_img" />
+              <p class="new_card_date">April 2, 2021</p>
+              <h2 class="new_card_title">
+                RX secures content partnership with
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2 class="footer_title">
+        <span class="footer_span">
+          Join the largest gaming community
+          <img class="footer_span_img" src="./images/lineblue.svg" alt="" />
+        </span>
+      </h2>
+      <p class="footer_p">
+        Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl
+        tempus
+        <br />
+        lectus. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem
+        ut libero malesu ada feugiat. Nulla quis lorem ut libero malesuada
+        feugiat. Vivamus magna justo
+      </p>
+      <form class="form">
+        <input
+          class="form_input"
+          type="text"
+          placeholder=" Your Email Address"
+        />
+        <button class="form_btn">Subscribe Now</button>
+      </form>
+    </footer>
   </body>
   <script src="./js/script.js"></script>
 </html>

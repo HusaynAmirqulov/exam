@@ -43,6 +43,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 5;
 }
 
 nav {
@@ -57,9 +58,9 @@ nav {
   display: none;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 946px) {
   .nav {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
   .nav-btn__link {
@@ -70,11 +71,17 @@ nav {
   }
 }
 
+@media (max-width: 520px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
 @media (max-width: 505px) {
   .nav-menu {
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
-    display: none;
     gap: 0px;
   }
   .nav-brand {
@@ -89,6 +96,7 @@ nav {
   }
   .nav-btn__link {
     padding: 8px 15px;
+    max-width: 178px;
   }
   #hamburger {
     display: block;
@@ -125,11 +133,11 @@ nav {
   }
 }
 
-@media (max-width:1230px) {
-  .era-div{
+@media (max-width: 1230px) {
+  .era-div {
     flex-direction: column;
   }
-  .frame{
+  .frame {
     width: 100%;
   }
 }
@@ -138,12 +146,16 @@ nav {
   .shop_wrapper {
     flex-direction: column;
   }
-  .shopcard{
+  .shopcard {
     margin-top: 20px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  .span {
+    font-size: 55px;
+    line-height: 15px;
+  }
   .sponsor-wrapper {
     flex-direction: column;
   }
@@ -238,6 +250,7 @@ nav {
 }
 
 .btns_btn {
+  max-width: 203px;
   padding: 21px 34px;
   background: rgba(87, 184, 255, 1);
   font-family: Orbitron;
@@ -390,6 +403,7 @@ span img {
 .shopcardd {
   margin-top: 19px;
   padding: 35px 38px;
+  gap: 17px;
   max-width: 642px;
   height: 212px;
   border-radius: 20px;
@@ -468,17 +482,367 @@ span img {
   border: none;
 }
 
-@media (max-width:501px) {
-  .shopcard{
+#options {
+  background-image: url("../images/Frame.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 732px;
+}
+
+#news {
+  background: rgba(0, 0, 0, 0.88);
+  padding: 75px 0 87px;
+}
+
+.news_titles {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news_title {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 1);
+}
+
+.new_btn {
+  width: 175px;
+  height: 70px;
+  margin-top: 62px;
+  background: rgba(87, 184, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  border: none;
+}
+
+.news_wrapper {
+  margin-top: 74px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.colt {
+  max-width: 648px;
+}
+
+.colt_date {
+  margin-top: 54px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: rgba(87, 184, 255, 1);
+}
+
+.colt_title {
+  margin-top: 28px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 1);
+}
+
+.new_cards {
+  max-width: 648px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.new_card {
+  max-width: 312px;
+  height: 321px;
+}
+
+.new_card_date {
+  margin-top: 30px;
+  color: rgba(87, 184, 255, 1);
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.new_card_title {
+  margin-top: 20px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 1);
+}
+
+#footer {
+  padding: 129px 0;
+  background-image: url("../images/IMAGE\ \(5\).svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer_title {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 746px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(20, 24, 32, 1);
+}
+
+.footer_span {
+  position: relative;
+  display: inline;
+}
+.footer_span_img {
+  position: absolute;
+  left: 190px;
+  bottom: 0;
+  max-width: 430px;
+}
+
+.footer_p {
+  padding: 20px;
+  text-align: center;
+  max-width: 846px;
+  margin: 32px auto 44px;
+}
+
+.form {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.form_input {
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-right: none;
+  width: 80%;
+  padding: 21px 226px 21px 13px;
+  font-family: Orbitron;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 445px;
+  height: 70px;
+}
+
+.form_btn {
+  width: 20%;
+  padding: 21px 25px;
+  height: 70px;
+  border: none;
+  border: 1px solid rgba(87, 184, 255, 1);
+  background-color: rgba(87, 184, 255, 1);
+}
+
+.colt_img {
+  width: 100%;
+}
+
+.new_card_img {
+  width: 100%;
+}
+
+/* @media (max-width: 605px) {
+  .form_btn {
+    font-size: 12px;
+    position: 10px;
+  }
+} */
+
+/* @media (max-width: 620px) {
+  .footer_span_img {
+    display: none;
+  }
+} */
+
+@media (max-width: 371px) {
+  .shopcard_title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .shopcard_text {
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .unleash_desc_text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 765px) {
+  .news_titles {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1340px) {
+  .news_wrapper {
+    flex-direction: column;
+  }
+  .linetop{
+    display: none;
+  }
+}
+
+@media (max-width: 501px) {
+  .shopcard {
     padding: 17px 17px;
   }
-  .shopcardd{
+  .shopcardd {
     padding: 17px 17px;
   }
 }
 
-@media (max-width:455px) {
-  .shopcard_text{
+@media (max-width: 455px) {
+  .shopcard_text {
     margin: 0px;
+  }
+}
+
+@media (max-width: 446px) {
+  .btns {
+    flex-direction: column;
+  }
+  .shopcard_title {
+    font-size: 24px;
+  }
+  .shopcard_text {
+    font-size: 16px;
+  }
+  .shopcard {
+    height: 220px;
+  }
+  .shopcardd {
+    height: 220px;
+  }
+}
+
+/* @media (max-width: 612px) {
+  .shopcard_text {
+    margin-top: 10px;
+  }
+} */
+
+@media (max-width: 470px) {
+  .shopcard_title {
+    font-size: 24px;
+  }
+  .shopcard_text {
+    font-size: 16px;
+  }
+}
+
+/*  */
+
+@media (max-width: 992px) {
+  .footer_title {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .footer_span_img {
+    left: 100px;
+    max-width: 250px;
+  }
+
+  .form_input {
+    padding: 18px 20px;
+  }
+
+  .form_btn {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .footer_span_img {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
+  }
+
+  .footer_p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .form_input,
+  .form_btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form_input {
+    padding: 16px 12px;
+    text-align: left;
+  }
+
+  .form_btn {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding: 60px 0;
+  }
+
+  .footer_title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .footer_span_img {
+    max-width: 150px;
+  }
+
+  .footer_p {
+    font-size: 13px;
   }
 }
