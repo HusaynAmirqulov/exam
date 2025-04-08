@@ -23,3 +23,14 @@ function toggleBacktop() {
     backtop.classList.remove("backtop-show");
   }
 }
+
+let modeBtn = document.querySelector(".nav-btn__img");
+
+modeBtn.addEventListener("click", function () {
+  if (document.body.className != "dark") {
+    this.firstElementChild.src = "./images/sun.svg";
+  } else {
+    this.firstElementChild.src = "./images/moon.svg";
+  }
+  document.body.classList.toggle("dark");
+});

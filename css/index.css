@@ -7,6 +7,36 @@
   font-family: Orbitron;
 }
 
+:root {
+  --bg-dark: rgba(0, 0, 0, 0.88);
+  --bg-aqua: rgba(87, 184, 255, 1);
+  --color-grey: rgba(204, 204, 204, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --hover: rgba(250, 196, 34, 1);
+  --color-greeey: rgba(153, 153, 153, 1);
+  --color-aqua: rgba(87, 184, 255, 1);
+  --color-black: rgba(20, 24, 32, 1);
+  --orange: rgba(253, 208, 74, 1);
+  --color-th: rgba(34, 39, 48, 1);
+  --color-e: rgba(85, 85, 85, 1);
+  --color-zt: rgba(223, 223, 223, 0.8);
+  --color-zthree: rgba(0, 0, 0, 0.3);
+  --color-black-blue: rgba(100, 150, 200, 0.3);
+  --color-twothree: rgba(223, 223, 223, 0.8);
+  --black: #000000;
+  --card: #485152;
+}
+
+.dark {
+  --bg-aqua: rgba(0, 0, 0, 0.88);
+  --bg-dark: rgba(87, 184, 255, 1);
+  --color-aqua: rgba(0, 0, 0, 0.88);
+  --black: rgba(87, 184, 255, 1);
+  --orange: rgb(254, 220, 118);
+  --card: rgba(87, 184, 255, 1);
+  --color-black: rgba(87, 184, 255, 1);
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -27,8 +57,8 @@ body {
 #homelogo {
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.88) 50%,
-    rgba(87, 184, 255, 1) 50%
+    var(--bg-dark) 50%,
+    var(--bg-aqua) 50%
   );
   padding: 209px 0 250px;
 }
@@ -36,8 +66,8 @@ body {
 header {
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.88) 50%,
-    rgba(87, 184, 255, 1) 50%
+    var(--bg-dark) 50%,
+    var(--bg-aqua) 50%
   );
   padding: 20px 0;
   position: fixed;
@@ -52,8 +82,13 @@ nav {
   align-items: center;
 }
 
+.nav-btn__img img {
+  width: 48px;
+  height: 48px;
+}
+
 #hamburger {
-  color: white;
+  color: var(--color-white);
   font-size: 25px;
   display: none;
 }
@@ -65,10 +100,10 @@ nav {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(87, 184, 255, 1);
-  border: 2px solid rgba(0, 0, 0, 0.88);
+  background: var(--bg-aqua);
+  border: 2px solid var(--bg-dark);
   font-size: 25px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
   position: fixed;
   bottom: 30px;
   right: 50px;
@@ -94,11 +129,11 @@ nav {
   line-height: 26px;
   letter-spacing: 0%;
   transition: 1s;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .nav-menu__link:hover {
-  color: rgba(250, 196, 34, 1);
+  color: var(--hover);
 }
 
 .nav-btn {
@@ -109,13 +144,13 @@ nav {
 
 .nav-btn__link {
   padding: 16px 31px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid var(--color-white);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .unleash {
@@ -144,7 +179,7 @@ nav {
   line-height: 16px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: rgba(87, 184, 255, 1);
+  color: var(--bg-aqua);
 }
 
 .unleash_desc_text {
@@ -154,7 +189,7 @@ nav {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: rgba(153, 153, 153, 1);
+  color: var(--color-greeey);
 }
 
 .btns {
@@ -166,14 +201,14 @@ nav {
 .btns_btn {
   max-width: 203px;
   padding: 21px 34px;
-  background: rgba(87, 184, 255, 1);
+  background: var(--color-aqua);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
   border: none;
 }
 
@@ -183,7 +218,7 @@ nav {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 h1 {
@@ -194,11 +229,11 @@ h1 {
   line-height: 86px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 #sponsor {
-  background: rgba(253, 208, 74, 1);
+  background: var(--orange);
   padding: 130px 0;
 }
 
@@ -211,7 +246,7 @@ h1 {
   line-height: 86px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(34, 39, 48, 1);
+  color: var(--black);
   text-align: center;
 }
 
@@ -224,7 +259,7 @@ h1 {
   letter-spacing: 0%;
   margin: 27px auto 41px;
   text-align: center;
-  color: rgba(85, 85, 85, 1);
+  color: var(--black);
 }
 
 .sponsor-wrapper {
@@ -275,7 +310,7 @@ span img {
   letter-spacing: 0%;
   text-align: center;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .shop_text {
@@ -287,7 +322,7 @@ span img {
   line-height: 32px;
   letter-spacing: 0%;
   text-align: center;
-  color: rgba(223, 223, 223, 0.8);
+  color: var(--color-zt);
 }
 
 .shop_wrapper {
@@ -302,7 +337,7 @@ span img {
   max-width: 642px;
   height: 212px;
   border-radius: 20px;
-  background: #485152;
+  background: var(--card);
   /* opacity: 0.5; */
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -311,7 +346,7 @@ span img {
 
 .shopcard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px;
   border-color: rgba(100, 150, 200, 0.3);
 }
 .shopcardd {
@@ -321,7 +356,7 @@ span img {
   max-width: 642px;
   height: 212px;
   border-radius: 20px;
-  background: #485152;
+  background: var(--card);
   /* opacity: 0.5; */
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -330,8 +365,8 @@ span img {
 
 .shopcardd:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-color: rgba(100, 150, 200, 0.3);
+  box-shadow: 0 10px 20px var(--color-zthree);
+  border-color: var(--color-black-blue);
 }
 
 .shopcard_title {
@@ -341,7 +376,7 @@ span img {
   line-height: 42px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .shopcard_text {
@@ -351,11 +386,11 @@ span img {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: rgba(223, 223, 223, 0.8);
+  color: var(--color-twothree);
 }
 
 #era {
-  background: rgba(0, 0, 0, 0.88);
+  background: var(--bg-dark);
   padding: 86px 0;
 }
 
@@ -374,7 +409,7 @@ span img {
   line-height: 74px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .era_text {
@@ -385,20 +420,21 @@ span img {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: rgba(223, 223, 223, 0.8);
+  color: var(--color-twothree);
 }
 
 .era-btn {
   margin-top: 54px;
   width: 203px;
   height: 70px;
-  background: rgba(87, 184, 255, 1);
-  border: none;
+  background: var(--color-aqua);
+  color: var(--black);
+  border: var(--black);
 }
 
 #options {
   width: 100%;
-  background: rgba(0, 0, 0, 0.88);
+  background: var(--bg-dark);
 }
 
 .options_img {
@@ -407,7 +443,7 @@ span img {
 }
 
 #news {
-  background: rgba(0, 0, 0, 0.88);
+  background: var(--bg-dark);
   padding: 75px 0 87px;
 }
 
@@ -424,15 +460,15 @@ span img {
   line-height: 74px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .new_btn {
   width: 175px;
   height: 70px;
   margin-top: 62px;
-  background: rgba(87, 184, 255, 1);
-  color: rgba(255, 255, 255, 1);
+  background: var(--color-aqua);
+  color: var(--color-white);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 17px;
@@ -460,7 +496,7 @@ span img {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0%;
-  color: rgba(87, 184, 255, 1);
+  color: var(--bg-aqua);
 }
 
 .colt_title {
@@ -471,7 +507,7 @@ span img {
   line-height: 46px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 .new_cards {
@@ -488,7 +524,7 @@ span img {
 
 .new_card_date {
   margin-top: 30px;
-  color: rgba(87, 184, 255, 1);
+  color: var(--bg-aqua);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 16px;
@@ -504,7 +540,7 @@ span img {
   line-height: 34px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-white);
 }
 
 #footer {
@@ -525,7 +561,7 @@ span img {
   line-height: 82px;
   letter-spacing: 0%;
   text-align: center;
-  color: rgba(20, 24, 32, 1);
+  color: var(--color-black);
 }
 
 .footer_span {
@@ -544,6 +580,7 @@ span img {
   text-align: center;
   max-width: 846px;
   margin: 32px auto 44px;
+  color: var(--black);
 }
 
 .form {
@@ -554,7 +591,7 @@ span img {
 }
 
 .form_input {
-  border: 1px solid rgba(204, 204, 204, 1);
+  border: 1px solid var(--color-grey);
   border-right: none;
   width: 80%;
   padding: 21px 226px 21px 13px;
@@ -573,8 +610,9 @@ span img {
   padding: 21px 25px;
   height: 70px;
   border: none;
-  border: 1px solid rgba(87, 184, 255, 1);
-  background-color: rgba(87, 184, 255, 1);
+  color: var(--black);
+  border: 1px solid var(--black);
+  background-color: var(--bg-aqua);
 }
 
 .colt_img {
